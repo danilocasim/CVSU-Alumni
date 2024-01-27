@@ -97,6 +97,7 @@ nav {
     padding: 1rem;
   }
   .nav-links {
+    visibility: hidden;
     position: absolute;
     right: 0px;
     height: 92vh;
