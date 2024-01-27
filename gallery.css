@@ -96,7 +96,8 @@ nav {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 5rem;
+  row-gap: 10rem;
   margin-top: 5rem;
 }
 
