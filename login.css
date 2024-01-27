@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+}
+
+/*NAVIGATION BAR */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #064635;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem;
+}
+
+.login h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.016em;
+  margin-bottom: 2.5rem;
+  color: #2e2d29;
+  margin-left: -24rem;
+}
+
+input {
+  height: 3.5rem;
+  font-size: 1.2rem;
+  max-width: 46rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+form {
+  width: 30rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  margin-bottom: 2rem;
+}
+
+.name {
+  margin-left: -15rem;
+  font-size: 1.2rem;
+}
+
+.info {
+  color: #2e2d29;
+  opacity: 0.5;
+}
+
+.tooltipText {
+  visibility: hidden;
+  position: absolute;
+  background-color: #2e2d29;
+  color: #fff;
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  background-color: #064635;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: #043327;
+}
+
+.divider {
+  height: 0;
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+
+.signup {
+  text-align: center;
+}
+
+.signup p {
+  margin-bottom: 0.5em;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #006cb8;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.card-content {
+  position: absolute;
+  background-color: #fff;
+  width: 45%;
+  height: auto;
+  top: 15rem;
+  padding: 2.5rem;
+}
+
+.card-content h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #064635;
+  font-weight: 500;
+}
+
+.card-content h2 {
+  font-size: 1.8rem;
+}
+
+.card-content p {
+  font-size: 1.3rem;
+}
+
+.alumni {
+  color: #2e2d29;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.line {
+  color: #2e2d29;
+}
+
+.information {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.information h1 {
+  margin-right: -17rem;
+  color: #064635;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card-footer {
+  background-color: #064635;
+  color: #fff;
+  padding: 2rem;
+  display: none;
+}
+
+.card-footer h1 {
+  font-size: 2.5rem;
+}
+
+.card-footer h2 {
+  font-size: 1.6rem;
+}
+
+.card-footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* PHONE */
+
+@media screen and (max-width: 765px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 12rem;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #064635;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .signup {
+    font-size: 1.2rem;
+  }
+  .login .name {
+    margin-left: -10.6rem;
+  }
+  .input {
+    width: 70%;
+  }
+  .login h1 {
+    margin-left: -15.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+  .bg {
+    display: none;
+  }
+  .information {
+    display: block;
+    margin-top: -4rem;
+    text-align: center;
+    padding: 0;
+  }
+  .information h1 {
+    margin-left: -16rem;
+  }
+  .card-footer {
+    display: block;
+  }
+  .login-head {
+    display: none;
+  }
+  .signup {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+:root {
+  --primary-color: #064635;
+  --secondary-color: #fff;
+  --tertiary-color: #ffc221;
+  --fourth-color: #fff8e1;
+  --text-primary: #0071dc;
+}
+
+body {
+  background-color: var(--fourth-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  height: 5rem;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 10rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  position: relative;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 8rem;
+  }
+  .nav-links a {
+    color: var(--secondary-color);
+  }
+  nav {
+    height: 3.75rem;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #064635;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links a::before {
+    background-color: var(--secondary-color);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pic-container {
+  position: relative;
+  width: 30rem;
+  height: 25rem;
+  background-color: var(--secondary-color);
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 3rem 2rem 0 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.pic-container:hover {
+  transform: scale(1.05);
+}
+
+.pic-container img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border: 0.1rem solid #000;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 6rem;
+  right: 5rem;
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 1.2rem solid var(--secondary-color);
+  border-right: 1.2rem solid var(--secondary-color);
+  border-left: 1.2rem solid var(--secondary-color);
+  border-bottom: 4rem solid var(--secondary-color);
+  width: 70rem;
+  max-height: 45rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .popup-image img {
+    width: 80%;
+  }
+  .popup-image span {
+    right: 1rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .popup-image img {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+  .popup-image img {
+    width: 65%;
+    top: 26rem;
+  }
+}
+
+@media screen and (min-width: 1260px) and (max-width: 1510px) {
+  .popup-image img {
+    width: 70%;
+  }
+  .popup-image span {
+    top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .popup-image span {
+    top: 8rem;
+  }
+}

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+body {
+    background-color: #fff8e1;
+}
+
+:root {
+    --primary-color: #064635;
+    --secondary-color: #fff;
+    --tertiary-color: #ffc221;
+    --fourth-color: #fff8e1;
+    --text-primary: #0071dc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #064635;
+    height: 5rem;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+
+.container .main-video {
+    flex: 3;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.container .main-video video {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--fourth-color);
+}
+
+.container .main-video .title {
+    color: #000;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 800;
+}
+
+.container .video-list {
+    flex: 1;
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+
+.container .video-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.container .video-list::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+
+.container .video-list .vid video {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.container .video-list .vid {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.container .video-list .vid:hover {
+    background-color: var(--primary-color);
+}
+
+.container .video-list .vid:hover video {
+    border: 1px solid var(--fourth-color);
+}
+
+.container .video-list .vid:hover .title {
+    color: var(--fourth-color);
+}
+
+.container .video-list .vid.active {
+    background-color: var(--primary-color);
+}
+
+.container .video-list .vid.active video {
+    background-color: var(--primary-color);
+    border: 1px solid var(--fourth-color);
+}
+
+.container .video-list .vid.active .title {
+    color: var(--tertiary-color);
+    font-weight: 800;
+}
+
+.container .video-list .vid .title {
+    color: #333;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .logo {
+        width: 10rem;
+    }
+    nav {
+        height: 3.75rem;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #064635;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    @media (max-width: 991px) {
+        .container {
+            flex-direction: column;
+            padding: 10px;
+        }
+        .video-list {
+            width: 100%;
+        }
+        nav {
+            height: 3.75rem;
+        }
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-2 {
+    opacity: 0;
+}
+
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
