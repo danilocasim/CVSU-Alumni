@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "CVSU Alumni",
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "CVSU Alumni"
+  }
+}
