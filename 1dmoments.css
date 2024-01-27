@@ -15,7 +15,6 @@
 
 body {
   background-color: var(--fourth-color);
-  overflow-x: hidden;
 }
 
 nav {
@@ -29,6 +28,7 @@ nav {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .logo {
@@ -223,6 +223,12 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
   .popup-image img {
     width: 80%;
   }
@@ -233,12 +239,18 @@ nav {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1279px) {
+  body {
+    overflow-x: hidden;
+  }
   .popup-image img {
     width: 95%;
   }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1500px) {
+  body {
+    overflow-x: hidden;
+  }
   .popup-image img {
     width: 65%;
     top: 26rem;
@@ -246,6 +258,9 @@ nav {
 }
 
 @media screen and (min-width: 1260px) and (max-width: 1510px) {
+  body {
+    overflow-x: hidden;
+  }
   .popup-image img {
     width: 70%;
   }
@@ -255,6 +270,9 @@ nav {
 }
 
 @media screen and (min-width: 1501px) {
+  body {
+    overflow-x: hidden;
+  }
   .popup-image span {
     top: 8rem;
   }
