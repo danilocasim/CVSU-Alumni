@@ -186,7 +186,7 @@ nav {
 }
 
 .popup-image {
-  position: static;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
