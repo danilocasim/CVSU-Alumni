@@ -221,6 +221,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    overflow-x: hidden;
+  }
   body {
     overflow-x: hidden;
   }
