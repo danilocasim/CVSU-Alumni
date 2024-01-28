@@ -7,7 +7,7 @@ function login() {
   const accounts = [
     { email: "angelicajoyce.tomas@cvsu.edu.ph", password: "tomas1" },
     { email: "adrianneil.bagnas@cvsu.edu.ph", password: "bagnas1" },
-    { email: "francojay.bagaporo@cvsu.edu.ph", password: "Cvsu2024  " },
+    { email: "francojay.bagaporo@cvsu.edu.ph", password: "Cvsu2024" },
     { email: "danilo.casim@cvsu.edu.ph", password: "danilojr" },
     { email: "addyson.diculen@cvsu.edu.ph", password: "diculen1" },
     { email: "milesian.tadas@cvsu.edu.ph", password: "tadas1" },
