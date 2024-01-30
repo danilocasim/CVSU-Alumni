@@ -96,7 +96,7 @@ nav {
   flex-direction: column;
   align-items: center;
   max-width: 22rem;
-  margin: 5rem auto;
+  margin: 0 auto;
   padding: 40px;
   box-sizing: border-box;
 }
