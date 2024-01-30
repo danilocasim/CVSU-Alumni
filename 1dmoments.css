@@ -157,6 +157,7 @@ nav {
   flex-wrap: wrap;
   max-width: 100%;
   max-height: 100%;
+  margin-top: 5rem;
 }
 
 .pic-container {

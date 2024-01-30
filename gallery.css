@@ -82,14 +82,6 @@ nav {
   height: 100%;
 }
 
-.alumni-title h1 {
-  font-size: 5rem;
-  text-align: center;
-  color: #064635;
-  padding: 3rem;
-  text-shadow: 2px 2px #ccc;
-}
-
 .grad-list {
   display: flex;
   justify-content: center;

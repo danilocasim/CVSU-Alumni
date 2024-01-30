@@ -96,7 +96,7 @@ nav {
   flex-direction: column;
   align-items: center;
   max-width: 22rem;
-  margin: 0rem auto;
+  margin: 5rem auto;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -235,7 +235,7 @@ nav {
 
 @media screen and (max-height: 900px) {
   .sub-container {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
 
