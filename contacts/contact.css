@@ -235,7 +235,7 @@ nav {
 
 @media screen and (max-height: 900px) {
   .sub-container {
-    margin-top: 5rem;
+    margin: 5rem auto;
   }
 }
 
