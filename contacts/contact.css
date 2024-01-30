@@ -249,7 +249,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1279px) or (min-height: 700px) {
   .sub-container {
     max-width: 100%;
     width: 150rem;

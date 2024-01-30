@@ -1,8 +1,8 @@
 // script.js
 
 function login() {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const email = document.querySelector("#email").value;
+  const password = document.querySelector("#password").value;
 
   const accounts = [
     { email: "angelicajoyce.tomas@cvsu.edu.ph", password: "tomas1" },
