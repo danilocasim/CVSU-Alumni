@@ -15,7 +15,6 @@
 
 body {
   background-color: var(--fourth-color);
-  overflow-x: hidden;
 }
 
 nav {
@@ -151,7 +150,6 @@ nav {
 }
 
 .container {
-  overflow: hidden;
   display: flex;
   justify-content: center;
   flex-direction: row;
