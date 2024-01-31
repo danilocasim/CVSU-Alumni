@@ -13,10 +13,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
 
 .wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav {
