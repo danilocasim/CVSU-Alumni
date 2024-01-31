@@ -95,7 +95,7 @@ nav {
   flex-wrap: wrap;
   gap: 5rem;
   row-gap: 10rem;
-  margin: 5rem auto;
+  margin: 8rem auto;
 }
 
 .grad-container {
@@ -152,6 +152,34 @@ nav {
 .info h3 {
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
+}
+
+/*footer*/
+
+footer {
+  margin-top: 15vh;
+}
+
+.foot-container {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.footer-bottom {
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: black;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
 }
 
 @media screen and (max-width: 680px) {
