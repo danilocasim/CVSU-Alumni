@@ -106,6 +106,9 @@ nav {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  border: 3px solid #000;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
 }
 
 .container .main-video video {
@@ -135,7 +138,7 @@ nav {
 }
 
 .container .video-list::-webkit-scrollbar-track {
-  background-color: var(--primary-color);
+  background-color: var(--fourth-color);
   border-radius: 50px;
 }
 
@@ -150,12 +153,14 @@ nav {
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #000;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 15px;
   overflow: hidden;
+  border: 2.5px solid #000;
+  box-shadow: 2.5px 2.5px;
+  border-radius: 5px;
 }
 
 .container .video-list .vid:hover {
@@ -180,7 +185,7 @@ nav {
 }
 
 .container .video-list .vid.active .title {
-  color: var(--tertiary-color);
+  color: var(--fourth-color);
   font-weight: 800;
 }
 

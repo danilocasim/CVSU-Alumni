@@ -233,7 +233,6 @@ nav {
 
 .button-1d button {
   padding: 10px 32px;
-  border: none;
   border-radius: 0.3rem;
   font-size: 1rem;
   background-color: var(--secondary-color);
@@ -363,6 +362,9 @@ nav {
 
 .img-date img {
   width: 6.5rem;
+  border: 3px solid #000;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
 }
 
 .events-container {

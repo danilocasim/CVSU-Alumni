@@ -13,7 +13,7 @@ body {
 /*NAVIGATION BAR */
 
 .wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -120,6 +120,9 @@ input {
   max-width: 46rem;
   width: 100%;
   padding: 1rem;
+  border: 3px solid #000;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
 }
 
 form {
@@ -174,10 +177,12 @@ form {
 .button button {
   background-color: #064635;
   color: #fff;
-  border: none;
   padding: 0.8rem 1.5rem 0.8rem;
   font-size: 1rem;
   cursor: pointer;
+  border: 3px solid #000;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
 }
 
 .button button:hover {
@@ -216,6 +221,9 @@ form {
   height: auto;
   top: 15rem;
   padding: 2.5rem;
+  border: 3px solid #000;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
 }
 
 .card-content h1 {
