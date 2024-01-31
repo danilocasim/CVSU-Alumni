@@ -106,14 +106,9 @@ elements.forEach(function (element) {
 // 1d moments popup image
 document.querySelectorAll(".pic-container img").forEach((image) => {
   image.onclick = () => {
-    if (window.innerWidth > 769) {
-      // Check screen width
-      document.querySelector(".popup-image").style.display = "block";
-      document.querySelector(".popup-image img").src =
-        image.getAttribute("src");
-    } else {
-      document.querySelector(".popup-image").style.display = "none";
-    }
+    // Check screen width
+    document.querySelector(".popup-image").style.display = "block";
+    document.querySelector(".popup-image img").src = image.getAttribute("src");
   };
 });
 

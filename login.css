@@ -17,6 +17,8 @@ body {
 }
 
 nav {
+  position: relative;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
