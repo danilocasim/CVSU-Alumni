@@ -149,7 +149,7 @@ nav {
 .container-index img {
   width: 100%;
   filter: brightness(0.35);
-  height: 42rem;
+  height: 50rem;
   object-fit: cover;
 }
 
