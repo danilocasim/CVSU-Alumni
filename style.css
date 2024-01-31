@@ -66,6 +66,10 @@ body {
   z-index: 10;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;

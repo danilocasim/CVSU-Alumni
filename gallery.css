@@ -15,6 +15,10 @@ body {
   background-position: center;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;

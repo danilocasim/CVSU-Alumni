@@ -12,6 +12,10 @@ body {
 
 /*NAVIGATION BAR */
 
+.wrapper {
+  overflow: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
