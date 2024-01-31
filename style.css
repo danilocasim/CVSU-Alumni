@@ -15,6 +15,7 @@
 
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .login-header {
@@ -66,9 +67,8 @@ body {
   z-index: 10;
 }
 
-.wrapper {
-  overflow-x: hidden;
-}
+/* .wrapper {
+} */
 
 nav {
   display: flex;
@@ -542,7 +542,7 @@ footer {
 /* NORMAL PHONE */
 
 @media screen and (max-width: 768px) {
-  body {
+  .wrapper {
     overflow-x: hidden;
   }
   .logo {
