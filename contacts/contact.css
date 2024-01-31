@@ -5,10 +5,19 @@
   font-family: "Libre Baskerville", serif;
 }
 
+:root {
+  --primary-color: #064635;
+  --secondary-color: #fff;
+  --tertiary-color: #ffc221;
+  --fourth-color: #fff8e1;
+  --fifth-color: #000;
+  --text-primary: #0071dc;
+}
+
 body {
   min-height: 100dvh;
   min-height: 100vh;
-  background-color: #fff8e1;
+  background-color: var(--fourth-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -32,12 +41,12 @@ nav {
   align-items: center;
   min-height: 8vh;
   font-family: "Poppins", sans-serif;
-  background-color: #064635;
+  background-color: var(--primary-color);
   height: 5rem;
 }
 
 .logo {
-  width: 13rem;
+  width: 10rem;
 }
 
 .nav-links {
@@ -52,7 +61,7 @@ nav {
 
 .nav-links a {
   position: relative;
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 500;
@@ -66,7 +75,7 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: var(--secondary-color);
   transition: 0.3s;
 }
 
@@ -81,7 +90,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -109,7 +118,7 @@ nav {
   width: 20rem;
   height: 25rem;
   object-fit: cover;
-  border: 0.1rem solid #000;
+  border: 0.1rem solid var(--fifth-color);
 }
 
 .info {
@@ -132,9 +141,9 @@ nav {
 }
 
 .divider {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 2rem 1rem 0 1rem;
-  border: 3px solid #000;
+  border: 3px solid var(--fifth-color);
   box-shadow: 3px 3px;
   border-radius: 5px;
 }
@@ -153,7 +162,7 @@ nav {
   align-items: center;
   gap: 0.7rem;
   font-size: 25px;
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 700;
   text-align: center;
@@ -183,8 +192,8 @@ nav {
 
 .button a {
   max-width: 15rem;
-  background-color: #064635;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: inherit;
   font-size: 0.9rem;
   padding: 1rem 2rem;
@@ -216,7 +225,7 @@ footer {
 }
 
 .footer-bottom p {
-  color: black;
+  color: var(--fifth-color);
 }
 
 .designer {
@@ -247,7 +256,7 @@ footer {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #064635;
+    background-color: var(--primary-color);
     z-index: 5;
     display: flex;
     flex-direction: column;
