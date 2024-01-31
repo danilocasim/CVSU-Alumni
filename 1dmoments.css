@@ -11,6 +11,7 @@
   --tertiary-color: #ffc221;
   --fourth-color: #fff8e1;
   --text-primary: #0071dc;
+  --fifth-color: #000;
 }
 
 body {
@@ -106,7 +107,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #064635;
+    background-color: var(--primary-color);
     z-index: 5;
     display: flex;
     flex-direction: column;
